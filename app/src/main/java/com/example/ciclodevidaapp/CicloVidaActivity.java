@@ -2,6 +2,7 @@ package com.example.ciclodevidaapp;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -29,6 +30,7 @@ public class CicloVidaActivity extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         Log.i(TAG,"On Pause");
+        Toast.makeText(this, "La Activity se ha pausado", Toast.LENGTH_SHORT).show();
     }
 
     @Override
